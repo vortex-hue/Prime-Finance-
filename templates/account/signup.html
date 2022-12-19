@@ -16,6 +16,8 @@
   {{ form.as_p }}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% else %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="/user/" />
   {% endif %}
   <button type="submit" class="btn btn-alt">{% trans "Sign Up" %} &raquo;</button>
 </form>
