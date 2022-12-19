@@ -142,6 +142,7 @@ LOGIN_REDIRECT_URL = '/user/'
 
 CSRF_TRUSTED_ORIGINS = ['https://*.primefinanceonline.com']
 
+ACCOUNT_AUTHENTICATED_LOGIN_REDIRECTS = True
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ACCOUNT_EMAIL_REQUIRED = True

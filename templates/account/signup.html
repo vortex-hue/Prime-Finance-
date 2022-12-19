@@ -14,12 +14,9 @@
 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
   {{ form.as_p }}
-  <input type="hidden" name="{{ redirect_field_name }}" value="/" />
-hx
-  {{ redirect_field_name }}
-
-  ds
-  {{ redirect_field_value }}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
   <button type="submit" class="btn btn-alt">{% trans "Sign Up" %} &raquo;</button>
 </form>
 
