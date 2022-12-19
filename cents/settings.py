@@ -138,7 +138,7 @@ SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/user/'
 
-#ACCOUNT_SIGNUP_REDIRECT_URL = "/user/"
+ACCOUNT_SIGNUP_REDIRECT_URL = '/user/'
 
 CSRF_TRUSTED_ORIGINS = ['https://*.primefinanceonline.com']
 
