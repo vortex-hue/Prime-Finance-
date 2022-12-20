@@ -152,6 +152,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 LOGIN_REDIRECT_URL = '/user/'
 
+LOGIN_REDIRECT_URL = '/user/'
+
 CSRF_TRUSTED_ORIGINS = ['https://*.primefinanceonline.com']
 
 # Static files (CSS, JavaScript, Images)
