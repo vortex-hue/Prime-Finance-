@@ -138,7 +138,7 @@ SITE_ID = 1
 
 ACCOUNT_ADAPTER = 'user_core.adapter.MyAccountAdapter'
 
-#ACCOUNT_SIGNUP_REDIRECT_URL = '/user/'
+ACCOUNT_SIGNUP_REDIRECT = '/user/'
 
 LOGIN_REDIRECT_URL = '/user/'
 
