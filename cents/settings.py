@@ -144,14 +144,9 @@ USE_TZ = True
 
 SITE_ID = 1
 
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'optional'
+LOGIN_REDIRECT_URL = '/user/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-LOGIN_URL = '/accounts/login'
-
-LOGIN_REDIRECT_URL = '/user/'
 
 CSRF_TRUSTED_ORIGINS = ['https://*.primefinanceonline.com']
 
