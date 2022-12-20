@@ -6,6 +6,8 @@ from django.contrib.auth import get_user_model
 from datetime import timedelta,date
 from django.core.mail import send_mail
 from django.conf import settings
+from django.conf import settings
+from allauth.account.adapter import DefaultAccountAdapter
 
 User = get_user_model()
 # Create your views here.
@@ -480,6 +482,11 @@ def user_referral(request):
         'site':site
     } 
     return render(request,'user/referral.html',context)
+
+class MyAccountAdapter(DefaultAccountAdapter):
+    def get_signup_redirect_url(self, request):
+        path = "/user/"
+        return path
 
 def my_custom_error_view(request):
     return render(request,'error.html')

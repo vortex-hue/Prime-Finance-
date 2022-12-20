@@ -155,6 +155,8 @@ LOGIN_REDIRECT_URL = '/user/'
 
 ACCOUNT_SIGNUP_REDIRECT_URL = '/'
 
+ACCOUNT_ADAPTER = 'user_core.views.MyAccountAdapter'
+
 CSRF_TRUSTED_ORIGINS = ['https://*.primefinanceonline.com']
 
 
