@@ -150,11 +150,15 @@ ACCOUNT_EMAIL_VERIFICATION = 'optional'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-LOGIN_REDIRECT_URL = '/user/'
+LOGIN_URL = '/accounts/login'
 
 LOGIN_REDIRECT_URL = '/user/'
+
+ACCOUNT_SIGNUP_REDIRECT_URL = '/'
 
 CSRF_TRUSTED_ORIGINS = ['https://*.primefinanceonline.com']
+
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
