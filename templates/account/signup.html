@@ -20,16 +20,6 @@
   <button type="submit" class="btn btn-alt">{% trans "Sign Up" %} &raquo;</button>
 </form>
 
-<script>
-  url = window.location.href + '?next=/user/'
-  window.onload = () => {
-    if (window.location.href.includes('user')){
-      console.log('yes')
-    } else {
-      window.location.assign(url)
-    }
-    
-  }
-</script>
+
 
 {% endblock %}
