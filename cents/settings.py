@@ -38,7 +38,6 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -151,9 +150,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 LOGIN_URL = '/accounts/login'
 
-LOGIN_REDIRECT_URL = '/user/'
-
-ACCOUNT_SIGNUP_REDIRECT_URL = '/'
+ACCOUNT_SIGNUP_REDIRECT_URL = "/thanks/"
+LOGIN_REDIRECT_URL = "/dashboard/"
 
 ACCOUNT_ADAPTER = 'user_core.views.MyAccountAdapter'
 
