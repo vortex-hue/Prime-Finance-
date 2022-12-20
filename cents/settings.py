@@ -149,6 +149,8 @@ ACCOUNT_EMAIL_VERIFICATION = 'optional'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+LOGIN_URL = '/accounts/login'
+
 LOGIN_REDIRECT_URL = '/user/'
 
 ACCOUNT_SIGNUP_REDIRECT_URL = '/'
