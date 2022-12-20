@@ -138,7 +138,7 @@ SITE_ID = 1
 
 # ACCOUNT_ADAPTER = 'user_core.adapter.MyAccountAdapter'
 
-ACCOUNT_SIGNUP_REDIRECT_URL = '/user/'
+#ACCOUNT_SIGNUP_REDIRECT_URL = '/user/'
 
 LOGIN_REDIRECT_URL = '/user/'
 
@@ -146,7 +146,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 CSRF_TRUSTED_ORIGINS = ['https://*.primefinanceonline.com']
 
-#ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_REQUIRED = True
 # ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 
 # Static files (CSS, JavaScript, Images)
