@@ -6,8 +6,6 @@ from django.contrib.auth import get_user_model
 from datetime import timedelta,date
 from django.core.mail import send_mail
 from django.conf import settings
-from django.conf import settings
-
 User = get_user_model()
 # Create your views here.
 
