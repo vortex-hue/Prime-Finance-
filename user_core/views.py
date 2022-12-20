@@ -483,10 +483,6 @@ def user_referral(request):
     } 
     return render(request,'user/referral.html',context)
 
-class MyAccountAdapter(DefaultAccountAdapter):
-    def get_signup_redirect_url(self, request):
-        path = "/user/"
-        return path
 
 def my_custom_error_view(request):
     return render(request,'error.html')

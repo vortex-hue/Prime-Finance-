@@ -38,6 +38,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -150,10 +151,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 LOGIN_URL = '/accounts/login'
 
-ACCOUNT_SIGNUP_REDIRECT_URL = "/thanks/"
-LOGIN_REDIRECT_URL = "/dashboard/"
-
-ACCOUNT_ADAPTER = 'user_core.views.MyAccountAdapter'
+LOGIN_REDIRECT_URL = '/user/'
 
 CSRF_TRUSTED_ORIGINS = ['https://*.primefinanceonline.com']
 
