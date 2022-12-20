@@ -136,9 +136,9 @@ USE_TZ = True
 
 SITE_ID = 1
 
-ACCOUNT_ADAPTER = 'user_core.adapter.MyAccountAdapter'
 
-ACCOUNT_SIGNUP_REDIRECT = '/user/'
+
+ACCOUNT_SIGNUP_REDIRECT = '/'
 
 LOGIN_REDIRECT_URL = '/user/'
 
