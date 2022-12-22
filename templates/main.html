@@ -10,19 +10,27 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="" name="description"/>
   <!-- Fav Icon  -->
-  <link href="{% static 'images/prime_logo_o.png' %}" rel="shortcut icon"/>
+  <link href="{% static 'images/logo.png' %}" rel="shortcut icon"/>
   <!-- Site Title  -->
   <title>
-   www.{{site.name}}.com
+   {{site.name}}
   </title>
   <meta href="https://uniquehyips.com/" name="designer"/>
   <!-- Vendor Bundle CSS -->
-  <link href="{% static 'css/vendor.bundle.css' %}" rel="stylesheet"/>
+  <link href="{% static 'assets/css/vendor.bundle.css' %}" rel="stylesheet"/>
   <!-- Custom styles for this template -->
-  <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
-  <link href="{% static 'css/theme.css' %}" rel="stylesheet"/>
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet"/>
+  <link href="{% static 'assets/css/theme.css' %}" rel="stylesheet"/>
+    <!-- Vendor Bundle CSS -->
+
+<!-- 
+    <link rel="stylesheet" href="{% static 'css/vendor.bundle.css' %}"> -->
+    <!-- Custom styles for this template -->
+    <!-- <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/theme.css' %}" rel="stylesheet"> -->
+  
   <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet">
-   <div align="right" class="lang wow bounceIn">
+   <div text-align="right" class="lang wow bounceIn">
     <div id="google_translate_element">
     </div>
     {% comment %} <script>
@@ -157,7 +165,9 @@
    <!-- End Navbar -->
    <!-- End Navbar -->
 
-   {% block content %}{% endblock content %}
+   {% block content %}
+   
+   {% endblock content %}
 
      <!-- Section Footer -->
   <div class="footer-section section section-pad-md light bg-footer">
